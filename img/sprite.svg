@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="pin" viewBox="0 0 24 24">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M5.12695 10.045V9.873C5.12695 6.077 8.20395 3 12 3V3C15.796 3 18.873 6.077 18.873 9.873V10.045C18.873 13.506 14.491 18.716 12.725 20.676C12.336 21.108 11.664 21.108 11.275 20.676C9.50895 18.716 5.12695 13.506 5.12695 10.045Z" stroke="currentColor" stroke-width="1.4468" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M10 9.95497C10 11.06 10.895 11.955 12 11.955V11.955C13.105 11.955 14 11.06 14 9.95497V9.91797C14 8.81297 13.105 7.91797 12 7.91797V7.91797C10.895 7.91797 10 8.81297 10 9.91797" stroke="currentColor" stroke-width="1.4468" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</symbol><symbol id="world" viewBox="0 0 24 24">
+<path d="M12 3C16.982 3 21 7.018 21 12C21 16.982 16.982 21 12 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M12 21C7.018 21 3 16.982 3 12C3 7.018 7.018 3 12 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.168 4.05975C7.27799 8.88475 7.27799 15.1158 10.168 19.9408C11.014 21.3538 12.987 21.3538 13.833 19.9408C16.723 15.1158 16.723 8.88475 13.833 4.05975C12.986 2.64675 11.014 2.64675 10.168 4.05975Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<path d="M3 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</symbol></svg>
