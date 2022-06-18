@@ -1,0 +1,40 @@
+.tabs {
+  margin: 0 0 40px;
+}
+
+.tab {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $main-text;
+  width: max-content;
+  padding-bottom: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.active {
+    border-bottom: 2px solid $main-text;
+  }
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+@include mobile {
+  .tab {
+    &:first-child {
+      margin-left: 16px;
+    }
+
+    &:last-child {
+      margin-right: 16px;
+    }
+  }
+
+  .tabs {
+    margin: 0 0 24px;
+  }
+}

@@ -70,6 +70,7 @@ section {
 
 .container {
   max-width: $desktop;
+  min-width: $mobile;
   margin: 0 auto;
   padding-left: $desktop-gap;
   padding-right: $desktop-gap;
