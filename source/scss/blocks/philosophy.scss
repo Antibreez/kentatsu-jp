@@ -50,16 +50,14 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  margin-top: -20px;
 }
 
 .philosophy__values-item {
   width: calc((100% - 40px) / 3);
   padding: 32px;
   border: 1px solid $grey200;
-
-  &:nth-last-child(n + 4) {
-    margin-bottom: 20px;
-  }
+  margin-top: 20px;
 
   &:not(:nth-child(3n)) {
     margin-right: 20px;
@@ -136,8 +134,13 @@
       no-repeat center/cover url('../img/philosophy-bg.jpg');
   }
 
+  .philosophy__values-list {
+    margin-top: 0;
+  }
+
   .philosophy__values-item {
     width: 100%;
+    margin-top: 0;
 
     &:nth-child(n) {
       margin-right: 0;

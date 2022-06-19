@@ -1,5 +1,6 @@
 .btn,
-.btn-secondary {
+.btn-secondary,
+.btn-third {
   font-weight: 600;
   font-size: 18px;
   line-height: 27px;
@@ -48,6 +49,11 @@
     color: $grey400;
     pointer-events: none;
   }
+}
+
+.btn-third {
+  background-color: $main-text;
+  color: #fff;
 }
 
 .btn-arrow {
