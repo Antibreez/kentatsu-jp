@@ -3337,6 +3337,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
+  body.js-no-scroll {
+    overflow: hidden; }
 
 main {
   -webkit-box-flex: 1;
@@ -3534,31 +3536,129 @@ section {
     padding-bottom: 14px;
     width: 100%; } }
 
-.input-block input {
-  padding: 17px 20px 16px;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 23px;
+.checkbox-block label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .checkbox-block label:hover {
+    cursor: pointer; }
+
+.checkbox-block.error .checkbox-block__checkbox {
+  outline: 2px solid #ff3326; }
+
+.checkbox-block input:checked + .checkbox-block__checkbox {
+  background: no-repeat center/12px 12px url("../img/check.svg"), #151515; }
+
+.checkbox-block a {
   color: #151515;
+  border-bottom: 1px solid #dee0e1; }
+
+.checkbox-block__checkbox {
+  width: 24px;
+  height: 24px;
   background-color: #eeeeee;
-  -webkit-transition: background-color 0.2s, border-color 0.2s;
-  -o-transition: background-color 0.2s, border-color 0.2s;
-  transition: background-color 0.2s, border-color 0.2s;
-  border: 1px solid #eeeeee;
-  width: 100%;
-  outline: none;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none; }
-  .input-block input:hover {
-    border-color: #dee0e1; }
-  .input-block input:focus {
-    border-color: #adb0b4;
-    outline: none; }
-  .input-block input:disabled {
-    background-color: #dee0e1;
-    border-color: #dee0e1;
-    color: #adb0b4; }
+  margin-right: 15px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0; }
+
+.checkbox-block__text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #151515;
+  padding-top: 2px; }
+
+.form-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -20px; }
+  .form-block > * {
+    margin-top: 20px; }
+  .form-block .checkbox-block {
+    margin-top: 40px; }
+  .form-block .btn-block {
+    margin-top: 24px; }
+
+.input-block {
+  width: 100%; }
+  .input-block.half {
+    width: calc((100% - 16px) / 2); }
+  .input-block input {
+    padding: 17px 20px 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #151515;
+    background-color: #eeeeee;
+    -webkit-transition: background-color 0.2s, border-color 0.2s;
+    -o-transition: background-color 0.2s, border-color 0.2s;
+    transition: background-color 0.2s, border-color 0.2s;
+    border: 1px solid #eeeeee;
+    width: 100%;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; }
+    .input-block input:hover {
+      border-color: #dee0e1; }
+    .input-block input:focus {
+      border-color: #adb0b4;
+      outline: none; }
+    .input-block input:disabled {
+      background-color: #dee0e1;
+      border-color: #dee0e1;
+      color: #adb0b4; }
+  .input-block textarea {
+    width: 100%;
+    min-height: 116px;
+    resize: none;
+    padding: 17px 20px 16px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 23px;
+    color: #151515;
+    background-color: #eeeeee;
+    -webkit-transition: background-color 0.2s, border-color 0.2s;
+    -o-transition: background-color 0.2s, border-color 0.2s;
+    transition: background-color 0.2s, border-color 0.2s;
+    border: 1px solid #eeeeee;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none; }
+    .input-block textarea:hover {
+      border-color: #dee0e1; }
+    .input-block textarea:focus {
+      border-color: #adb0b4;
+      outline: none; }
+    .input-block textarea:disabled {
+      background-color: #dee0e1;
+      border-color: #dee0e1;
+      color: #adb0b4; }
+
+.input-block__error {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #ff3326;
+  margin: 5px 0 0;
+  display: none; }
+
+.input-block.error input,
+.input-block.error textarea {
+  border-color: #ff3326; }
+
+.input-block.error .input-block__error {
+  display: block; }
+
+.input-block.error .select2-container--default .select2-selection--single {
+  border-color: #ff3326; }
 
 .input-block__name {
   font-weight: 400;
@@ -3569,6 +3669,10 @@ section {
   display: block; }
   .input-block__name span {
     color: #ff3326; }
+
+@media (max-width: 767px) {
+  .input-block.half {
+    width: 100%; } }
 
 .main-title {
   margin: 0 0 40px; }
@@ -3599,7 +3703,18 @@ section {
   bottom: 0;
   right: 0;
   margin: 0;
-  z-index: 20; }
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.2s, visibility 0s 0.2s;
+  -o-transition: opacity 0.2s, visibility 0s 0.2s;
+  transition: opacity 0.2s, visibility 0s 0.2s; }
+  .modal.js-show {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition-delay: 0s;
+         -o-transition-delay: 0s;
+            transition-delay: 0s; }
 
 .modal__overlay {
   position: absolute;
@@ -3633,6 +3748,9 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0 0 24px; }
 
 .modal__title {
@@ -3653,7 +3771,9 @@ section {
   -o-transition: color 0.2s;
   transition: color 0.2s;
   -ms-flex-negative: 0;
-      flex-shrink: 0; }
+      flex-shrink: 0;
+  margin-left: 24px;
+  margin-top: 7px; }
   .modal__close-btn:hover {
     cursor: pointer;
     color: #f32424; }
@@ -3668,10 +3788,36 @@ section {
   color: #151515;
   margin: 0 0 40px; }
 
+.modal__btn-block {
+  width: 100%; }
+
+@media (max-width: 767px) {
+  .modal__body {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 95px);
+    max-width: none;
+    overflow-y: auto;
+    padding: 24px 16px; }
+  .modal__title {
+    font-size: 24px;
+    line-height: 29px; }
+  .modal__close-btn {
+    margin-top: 3px; }
+  .modal__btn-block {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 24px 16px;
+    background-color: #fff; } }
+
 .select-block {
   width: 100%; }
 
-.select2-container {
+.select2.select2-container {
   width: 100% !important; }
 
 .select {

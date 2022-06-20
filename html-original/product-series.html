@@ -157,6 +157,7 @@
                   <button
                     type="button"
                     class="review__data-partnership btn-third"
+                    data-trigger="modal-partnership"
                   >
                     Стать партнёром
                   </button>
@@ -167,7 +168,11 @@
         </section>
       </div>
 
-      <section class="modal">
+      <section
+        class="modal"
+        id="modal-partnership"
+        data-modal="modal-partnership"
+      >
         <div class="modal__overlay">
           <div class="modal__body">
             <header class="modal__header">
@@ -177,18 +182,48 @@
               </button>
             </header>
             <p class="modal__desc">
-              Оставьте заявку и мы свяжемся с вами в ближайшее время.
+              Оставьте заявку и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее
+              время.
             </p>
-            <form>
-              <div class="input-block">
+            <form class="form-block">
+              <div class="input-block half">
                 <label>
                   <span class="input-block__name">Имя <span>*</span></span>
                   <input type="text" name="name" />
                 </label>
                 <p class="input-block__error">Поле обязательно к заполнению</p>
               </div>
-              <div class="select-block">
-                <select class="select visually-hidden" name="region">
+
+              <div class="input-block half">
+                <label>
+                  <span class="input-block__name">Фамилия <span>*</span></span>
+                  <input type="text" name="surname" />
+                </label>
+                <p class="input-block__error">Поле обязательно к заполнению</p>
+              </div>
+
+              <div class="input-block">
+                <label>
+                  <span class="input-block__name">Название компании</span>
+                  <input type="text" name="company" />
+                </label>
+              </div>
+
+              <div class="input-block">
+                <label>
+                  <span class="input-block__name">Отдел</span>
+                  <input type="text" name="department" />
+                </label>
+              </div>
+
+              <div class="input-block half">
+                <span class="input-block__name">Регион <span>*</span></span>
+                <select
+                  class="select visually-hidden"
+                  aria-placeholder="Выберите регион"
+                  name="region"
+                >
+                  <option></option>
                   <option value="Африка">Африка</option>
                   <option value="Азия">Азия</option>
                   <option value="Центральная Азия">Центральная Азия</option>
@@ -201,6 +236,85 @@
                   <option value="Европа/Россия">Европа/Россия</option>
                   <option value="Европа/Россия">Европа/Россия</option>
                 </select>
+                <p class="input-block__error">Поле обязательно к заполнению</p>
+              </div>
+
+              <div class="input-block half">
+                <span class="input-block__name">Страна <span>*</span></span>
+                <select
+                  class="select visually-hidden"
+                  aria-placeholder="Выберите страну"
+                  name="country"
+                >
+                  <option></option>
+                  <option value="Россия">Россия</option>
+                  <option value="Казахстан">Казахстан</option>
+                </select>
+                <p class="input-block__error">Поле обязательно к заполнению</p>
+              </div>
+
+              <div class="input-block">
+                <label>
+                  <span class="input-block__name">Адрес</span>
+                  <input type="text" name="address" />
+                </label>
+              </div>
+
+              <div class="input-block">
+                <label>
+                  <span class="input-block__name">Email <span>*</span></span>
+                  <input type="email" name="email" />
+                </label>
+                <p class="input-block__error">Введите корректный Email</p>
+              </div>
+
+              <div class="input-block half">
+                <label>
+                  <span class="input-block__name"
+                    >Номер телефона <span>*</span></span
+                  >
+                  <input type="text" name="phone" class="phone" />
+                </label>
+                <p class="input-block__error">Введите корректный номер</p>
+              </div>
+
+              <div class="input-block half">
+                <label>
+                  <span class="input-block__name">Факс <span>*</span></span>
+                  <input type="text" name="fax" class="phone" />
+                </label>
+                <p class="input-block__error">Введите корректный номер</p>
+              </div>
+
+              <div class="input-block">
+                <label>
+                  <span class="input-block__name"
+                    >Сообщение <span>*</span></span
+                  >
+                  <textarea name="message"></textarea>
+                </label>
+                <p class="input-block__error">Поле обязательно к заполнению</p>
+              </div>
+
+              <div class="checkbox-block">
+                <label>
+                  <input
+                    type="checkbox"
+                    class="visually-hidden"
+                    name="agreement"
+                  />
+                  <div class="checkbox-block__checkbox"></div>
+                  <span class="checkbox-block__text">
+                    Я соглашаюсь с
+                    <a href="#">условиями обработки персональных данных</a>
+                  </span>
+                </label>
+              </div>
+
+              <div class="modal__btn-block">
+                <button class="modal__submit btn" type="submit">
+                  Отправить заявку
+                </button>
               </div>
             </form>
           </div>
