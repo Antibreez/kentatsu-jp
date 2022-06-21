@@ -4131,6 +4131,9 @@ section {
   .category__lineup-item:not(:nth-child(3n)) {
     margin-right: 20px; }
 
+.category__lineup-link:hover .category__lineup-title {
+  color: #f32424; }
+
 .category__lineup-img-block {
   width: 100%;
   padding-top: 52.7%;
@@ -4152,7 +4155,10 @@ section {
   font-size: 24px;
   line-height: 29px;
   color: #151515;
-  margin: 0 0 8px; }
+  margin: 0 0 8px;
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s; }
 
 .category__lineup-desc {
   font-weight: 400;
@@ -4928,6 +4934,13 @@ section {
   color: #151515; }
   .perfection__product-list-item:not(:last-child) {
     margin-bottom: 8px; }
+  .perfection__product-list-item a {
+    color: #151515;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s; }
+    .perfection__product-list-item a:hover {
+      color: #f32424; }
 
 @media (max-width: 1279px) {
   .perfection__content {
@@ -5109,10 +5122,18 @@ section {
           flex-grow: 1;
   background: no-repeat center/cover url("../img/partnership-bg.jpg"), #f3f3f3; }
 
+.philosophy__partnership.buy .philosophy__partnership-slogan {
+  margin-bottom: 198px; }
+
+.philosophy__partnership.buy .philosophy__partnership-img {
+  background: no-repeat center/cover url("../img/buy-bg.jpg"), #f3f3f3; }
+
 @media (max-width: 1439px) {
   .philosophy__promo {
     background: -o-linear-gradient(307.85deg, rgba(0, 0, 0, 0.4) 5.85%, rgba(0, 0, 0, 0) 75.3%), no-repeat top calc(50% + 20px) center/cover url("../img/philosophy-bg.jpg");
-    background: linear-gradient(142.15deg, rgba(0, 0, 0, 0.4) 5.85%, rgba(0, 0, 0, 0) 75.3%), no-repeat top calc(50% + 20px) center/cover url("../img/philosophy-bg.jpg"); } }
+    background: linear-gradient(142.15deg, rgba(0, 0, 0, 0.4) 5.85%, rgba(0, 0, 0, 0) 75.3%), no-repeat top calc(50% + 20px) center/cover url("../img/philosophy-bg.jpg"); }
+  .philosophy__partnership.buy .philosophy__partnership-slogan {
+    margin-bottom: 160px; } }
 
 @media (max-width: 1279px) {
   .philosophy__promo {
@@ -5174,7 +5195,9 @@ section {
   .philosophy__partnership-slogan {
     font-size: 24px;
     line-height: 29px;
-    margin: 0 0 114px; } }
+    margin: 0 0 114px; }
+  .philosophy__partnership.buy .philosophy__partnership-slogan {
+    margin-bottom: 56px; } }
 
 .promo__block {
   padding: 60px;
@@ -5325,7 +5348,8 @@ section {
 .review__main {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin: 0 0 80px; }
 
 .review__img-block {
   width: 555px;
@@ -5470,6 +5494,8 @@ section {
     height: 704px; } }
 
 @media (max-width: 767px) {
+  .review__main {
+    margin: 0 0 40px; }
   .review__img-block {
     margin: 0 auto 40px; }
   .review__img-main-block {
@@ -5483,7 +5509,8 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 0; }
   .review__data-char {
     width: 100%;
     margin-top: 0; }
@@ -5496,7 +5523,8 @@ section {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #fff; }
+    background-color: #fff;
+    z-index: 2; }
   .review__data-buy {
     width: 50%;
     margin-right: 0;
