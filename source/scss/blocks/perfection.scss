@@ -64,6 +64,15 @@
   &:not(:last-child) {
     margin-bottom: 8px;
   }
+
+  a {
+    color: $main-text;
+    transition: color 0.2s;
+
+    &:hover {
+      color: $primary;
+    }
+  }
 }
 
 @include tablet {

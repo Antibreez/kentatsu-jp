@@ -110,6 +110,16 @@
   background: no-repeat center/cover url('../img/partnership-bg.jpg'), $grey100;
 }
 
+.philosophy__partnership.buy {
+  .philosophy__partnership-slogan {
+    margin-bottom: 198px;
+  }
+
+  .philosophy__partnership-img {
+    background: no-repeat center/cover url('../img/buy-bg.jpg'), $grey100;
+  }
+}
+
 @include desktop-m {
   .philosophy__promo {
     background: linear-gradient(
@@ -119,6 +129,12 @@
       ),
       no-repeat top calc(50% + 20px) center/cover
         url('../img/philosophy-bg.jpg');
+  }
+
+  .philosophy__partnership.buy {
+    .philosophy__partnership-slogan {
+      margin-bottom: 160px;
+    }
   }
 }
 
@@ -220,5 +236,11 @@
     font-size: 24px;
     line-height: 29px;
     margin: 0 0 114px;
+  }
+
+  .philosophy__partnership.buy {
+    .philosophy__partnership-slogan {
+      margin-bottom: 56px;
+    }
   }
 }

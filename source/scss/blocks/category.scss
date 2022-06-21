@@ -132,6 +132,14 @@
   }
 }
 
+.category__lineup-link {
+  &:hover {
+    .category__lineup-title {
+      color: $primary;
+    }
+  }
+}
+
 .category__lineup-img-block {
   width: 100%;
   padding-top: 52.7%;
@@ -155,6 +163,7 @@
   line-height: 29px;
   color: $main-text;
   margin: 0 0 8px;
+  transition: color 0.2s;
 }
 
 .category__lineup-desc {

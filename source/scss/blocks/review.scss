@@ -1,5 +1,6 @@
 .review__main {
   display: flex;
+  margin: 0 0 80px;
 }
 
 .review__img-block {
@@ -179,6 +180,10 @@
 }
 
 @include mobile {
+  .review__main {
+    margin: 0 0 40px;
+  }
+
   .review__img-block {
     margin: 0 auto 40px;
   }
@@ -196,6 +201,7 @@
   .review__data-chars {
     flex-direction: column;
     margin-top: 0;
+    margin-bottom: 0;
   }
 
   .review__data-char {
@@ -217,6 +223,7 @@
     left: 0;
     width: 100%;
     background-color: #fff;
+    z-index: 2;
   }
 
   .review__data-buy {
