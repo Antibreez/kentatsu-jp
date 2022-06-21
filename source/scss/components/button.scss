@@ -10,7 +10,12 @@
   border: none;
   color: #fff;
   text-align: center;
+  vertical-align: middle;
   transition: background-color 0.2s;
+
+  & * {
+    vertical-align: middle;
+  }
 
   &:hover {
     cursor: pointer;
@@ -87,7 +92,8 @@
 
 @include mobile {
   .btn,
-  .btn-secondary {
+  .btn-secondary,
+  .btn-third {
     font-size: 16px;
     line-height: 24px;
     padding-top: 12px;

@@ -19,7 +19,7 @@
   color: $grey400;
   transition: color 0.2s;
   margin: 0 0 6px;
-  white-space: nowrap;
+  // white-space: nowrap;
 
   &:not(:last-child) {
     &::after {
@@ -52,5 +52,9 @@
 @include mobile {
   .breadcrumbs {
     margin: 0 0 26px;
+  }
+
+  .breadcrumbs__additional {
+    display: none;
   }
 }
