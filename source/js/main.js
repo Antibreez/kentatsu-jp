@@ -10,6 +10,7 @@ import './quality-tabs'
 import './about-brand-tabs'
 import './modal-partnership'
 import './series-slider'
+import './series-tabs'
 
 $(window).on('load', function () {
   if ($('.review__data-actions').length > 0 && $(window).width() < 768) {
