@@ -29,3 +29,26 @@ $(window).on('load', () => {
     $blocks.parent().find(`[data-block='${name}']`).show()
   })
 })
+
+const $tabs = $('.about-brand__tabs .tab')
+const $blocks = $('.about-brand__part')
+
+const params = new URLSearchParams(window.location.search)
+
+if (params.has('tab')) {
+  const name = params.get('tab')
+
+  const $currentTab = $tabs.parent().find(`[data-tab="${name}"]`)
+
+  if ($currentTab.length > 0) {
+    $tabs.removeClass('active')
+    $currentTab.addClass('active')
+  }
+
+  const $currentBlock = $blocks.parent().find(`[data-block="${name}"]`)
+
+  if ($currentBlock.length > 0) {
+    $blocks.hide()
+    $currentBlock.show()
+  }
+}
