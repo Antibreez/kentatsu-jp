@@ -11,6 +11,8 @@ $(window).on('load', function () {
   const $slide = $('.review__img-preview-slide')
   const $mainImg = $('.review__img-main-block img')
 
+  if ($slider.length === 0) return
+
   $mainImg.attr('src', $slide.first().find('img').attr('src') || '')
 
   if (

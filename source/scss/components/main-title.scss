@@ -14,6 +14,44 @@
   margin: 0;
 }
 
+.main-title__region {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-top: 15px;
+  margin-left: auto;
+}
+
+.main-title__region-place {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $main-text;
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+  border-right: 1px solid $main-text;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+}
+
+.main-title__region-change {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $primary;
+  transition: color 0.2s;
+  padding-left: 16px;
+
+  &:hover {
+    color: $primary-hover;
+  }
+}
+
 @include mobile {
   .main-title {
     margin: 0 0 24px;
@@ -22,5 +60,16 @@
   .main-title__title {
     font-size: 27px;
     line-height: 32px;
+  }
+
+  .main-title__container {
+    flex-direction: column;
+  }
+
+  .main-title__region {
+    padding-left: 0;
+    padding-bottom: 16px;
+    margin-left: 0;
+    margin-top: 24px;
   }
 }
