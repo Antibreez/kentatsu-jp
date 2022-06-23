@@ -38,11 +38,19 @@
   width: max-content;
   transition: color 0.2s, background-color 0.2s;
 
-  &:hover {
-    cursor: pointer;
-    background-color: $primary;
-    color: #fff;
+  @media (hover: hover) {
+    &:hover {
+      cursor: pointer;
+      background-color: $primary;
+      color: #fff;
+    }
   }
+
+  // &:hover {
+  //   cursor: pointer;
+  //   background-color: $primary;
+  //   color: #fff;
+  // }
 
   &.active {
     background-color: $main-text;

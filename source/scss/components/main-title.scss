@@ -1,5 +1,17 @@
 .main-title {
   margin: 0 0 40px;
+
+  &.no-breadcrumbs {
+    padding-top: 37px;
+
+    @include tablet {
+      padding-top: 8px;
+    }
+
+    @include mobile {
+      padding-top: 24px;
+    }
+  }
 }
 
 .main-title__container {
