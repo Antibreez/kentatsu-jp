@@ -15,7 +15,17 @@ import './buy-tabs'
 import './select-region'
 
 $(window).on('load', function () {
-  if ($('.review__data-actions').length > 0 && $(window).width() < 768) {
+  if ($('.review__data-actions').length > 0 && $(window).outerWidth() < 768) {
     $('.footer').css('padding-bottom', '70px')
+  }
+})
+
+$(window).on('resize', function () {
+  if ($('.review__data-actions').length > 0) {
+    if ($(window).outerWidth() < 768) {
+      $('.footer').css('padding-bottom', '70px')
+    } else {
+      $('.footer').css('padding-bottom', '')
+    }
   }
 })
