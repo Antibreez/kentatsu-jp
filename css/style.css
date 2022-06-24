@@ -6154,9 +6154,6 @@ section {
       font-size: 14px;
       line-height: 17px; } }
 
-.series__part {
-  display: none; }
-
 @media (max-width: 767px) {
   .series__tabs-container {
     padding-left: 0;
