@@ -5206,6 +5206,8 @@ section {
   .history__promo {
     height: 460px;
     padding: 40px 32px; }
+  .history__promo-logo {
+    margin: 0 0 40px; }
   .history__date {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5710,8 +5712,8 @@ section {
 @media (max-width: 1279px) {
   .promo__block {
     padding: 32px;
-    background: -o-linear-gradient(354.92deg, rgba(150, 0, 0, 0.3) 3.85%, rgba(189, 13, 13, 0) 49.77%), no-repeat top 50% right -40px/cover url("../img/promo-bg.jpg");
-    background: linear-gradient(95.08deg, rgba(150, 0, 0, 0.3) 3.85%, rgba(189, 13, 13, 0) 49.77%), no-repeat top 50% right -40px/cover url("../img/promo-bg.jpg"); }
+    background: -o-linear-gradient(354.92deg, rgba(150, 0, 0, 0.3) 3.85%, rgba(189, 13, 13, 0) 49.77%), no-repeat top 50% right 0/cover url("../img/promo-bg.jpg");
+    background: linear-gradient(95.08deg, rgba(150, 0, 0, 0.3) 3.85%, rgba(189, 13, 13, 0) 49.77%), no-repeat top 50% right 0/cover url("../img/promo-bg.jpg"); }
   .promo__title {
     margin: 0 0 427px; } }
 
