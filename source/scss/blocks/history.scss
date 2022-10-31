@@ -1,6 +1,6 @@
 .history__promo {
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   padding: 60px;
   margin: 0 0 80px;
   background: linear-gradient(
@@ -94,7 +94,7 @@
 
 @include tablet {
   .history__promo {
-    height: 460px;
+    min-height: 460px;
     padding: 40px 32px;
   }
 
@@ -118,7 +118,7 @@
 
 @include mobile {
   .history__promo {
-    height: 400px;
+    min-height: 400px;
     padding: 24px 16px;
     margin: 0 0 40px;
   }

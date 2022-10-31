@@ -1,6 +1,9 @@
 .for-partners__promo {
   padding: 60px;
   margin: 0 0 100px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(
       130.65deg,
       rgba(0, 0, 0, 0.8) 11.29%,
@@ -14,8 +17,13 @@
   font-size: 46px;
   line-height: 55px;
   color: #fff;
-  margin: 0 0 90px;
+  margin: 0 0 24px;
   max-width: 550px;
+}
+
+.for-partners__partnership {
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .for-partners__statistics {
@@ -214,6 +222,7 @@
   .for-partners__promo {
     padding: 24px 16px 16px;
     margin: 0 0 40px;
+    min-height: 345px;
     background: linear-gradient(
         176.08deg,
         rgba(0, 0, 0, 0.8) 5.97%,
@@ -225,7 +234,6 @@
   .for-partners__promo-title {
     font-size: 24px;
     line-height: 29px;
-    margin: 0 0 194px;
   }
 
   .for-partners__statistics {
