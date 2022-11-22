@@ -20,6 +20,8 @@
 
 .category__promo-img {
   position: absolute;
+  top: 70px;
+  right: 180px;
 
   &.rac {
     top: 142px;
@@ -187,6 +189,8 @@
   }
 
   .category__promo-img {
+    right: 115px;
+
     &.rac {
       width: 438px;
       height: 195px;
@@ -221,6 +225,9 @@
   }
 
   .category__promo-img {
+    right: 50%;
+    transform: translateX(50%);
+
     &.rac,
     &.cac {
       width: 448px;
@@ -288,6 +295,9 @@
   }
 
   .category__promo-img {
+    width: 130px;
+    top: 50px;
+
     &.rac {
       width: 204px;
       height: 91px;
