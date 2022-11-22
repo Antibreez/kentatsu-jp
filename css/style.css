@@ -4222,7 +4222,9 @@ section {
     background-color: #f32424; }
 
 .category__promo-img {
-  position: absolute; }
+  position: absolute;
+  top: 70px;
+  right: 180px; }
   .category__promo-img.rac {
     top: 142px;
     right: 91px;
@@ -4364,15 +4366,17 @@ section {
       height: 283px;
       top: 77px;
       right: 144px; }
-  .category__promo-img.rac {
-    width: 438px;
-    height: 195px;
-    top: 138px;
-    right: 64px; }
-  .category__promo-img.cac {
-    width: 220px;
-    height: auto;
-    right: 175px; } }
+  .category__promo-img {
+    right: 115px; }
+    .category__promo-img.rac {
+      width: 438px;
+      height: 195px;
+      top: 138px;
+      right: 64px; }
+    .category__promo-img.cac {
+      width: 220px;
+      height: auto;
+      right: 175px; } }
 
 @media (max-width: 1279px) {
   .category__promo {
@@ -4388,18 +4392,23 @@ section {
               transform: translateX(50%); }
     .category__promo.cac {
       padding-top: 460px; }
-  .category__promo-img.rac, .category__promo-img.cac {
-    width: 448px;
-    height: 199px;
-    top: 139px;
+  .category__promo-img {
     right: 50%;
     -webkit-transform: translateX(50%);
         -ms-transform: translateX(50%);
             transform: translateX(50%); }
-  .category__promo-img.cac {
-    width: 220px;
-    height: auto;
-    top: 120px; }
+    .category__promo-img.rac, .category__promo-img.cac {
+      width: 448px;
+      height: 199px;
+      top: 139px;
+      right: 50%;
+      -webkit-transform: translateX(50%);
+          -ms-transform: translateX(50%);
+              transform: translateX(50%); }
+    .category__promo-img.cac {
+      width: 220px;
+      height: auto;
+      top: 120px; }
   .category__benefits-list {
     margin-top: 0; }
   .category__benefits-item {
@@ -4428,14 +4437,17 @@ section {
       top: 48px; }
     .category__promo.cac {
       padding-top: 230px; }
-  .category__promo-img.rac {
-    width: 204px;
-    height: 91px;
-    top: 76px; }
-  .category__promo-img.cac {
-    width: 100px;
-    height: auto;
-    top: 70px; }
+  .category__promo-img {
+    width: 130px;
+    top: 50px; }
+    .category__promo-img.rac {
+      width: 204px;
+      height: 91px;
+      top: 76px; }
+    .category__promo-img.cac {
+      width: 100px;
+      height: auto;
+      top: 70px; }
   .category__promo-title {
     font-size: 24px;
     line-height: 29px; }
