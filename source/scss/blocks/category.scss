@@ -21,7 +21,10 @@
 .category__promo-img {
   position: absolute;
   top: 70px;
-  right: 180px;
+  right: 100px;
+  width: 500px;
+  height: 340px;
+  object-fit: contain;
 
   &.rac {
     top: 142px;
@@ -189,7 +192,10 @@
   }
 
   .category__promo-img {
-    right: 115px;
+    top: 80px;
+    right: 86px;
+    width: 400px;
+    height: 290px;
 
     &.rac {
       width: 438px;
@@ -295,7 +301,8 @@
   }
 
   .category__promo-img {
-    width: 130px;
+    width: 180px;
+    height: 130px;
     top: 50px;
 
     &.rac {
