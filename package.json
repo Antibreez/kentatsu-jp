@@ -70,6 +70,8 @@
     "jquery-ui": "^1.13.0",
     "jquery-ui-bundle": "^1.12.1-migrate",
     "jquery.nicescroll": "^3.7.6",
+    "mdb-ui-kit": "^6.0.1",
+    "perfect-scrollbar": "^1.5.5",
     "select2": "^4.1.0-rc.0",
     "swiper": "^7.2.0"
   }

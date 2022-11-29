@@ -13,6 +13,7 @@ import './series-slider'
 import './series-tabs'
 import './buy-tabs'
 import './select-region'
+//import './perfect-scrollbar'
 
 $(window).on('load', function () {
   if ($('.review__data-actions').length > 0 && $(window).outerWidth() < 768) {
